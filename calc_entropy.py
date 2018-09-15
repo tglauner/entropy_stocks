@@ -6,7 +6,7 @@ import numpy as np
 # Input a pandas series 
 def ent(data):
     p_data= data.value_counts()/len(data) # calculates the probabilities
-    entropy=sc.stats.entropy(p_data)  # input probabilities to get the entropy 
+    entropy=sc.stats.entropy(p_data)  # input p robabilities to get the entropy 
     return entropy
 
 ts = pd.Series(np.random.randint(0,100,size=100))
